@@ -56,31 +56,13 @@ pip install -r requirements.txt
 Create a `.env` file in the root directory:
 
 ```env
-# Django Settings
-SECRET_KEY=your-super-secret-key-here-change-in-production
+# .env file
+DJANGO_SECRET_KEY=your-actual-secret-key-here
 DEBUG=True
-ALLOWED_HOSTS=localhost,127.0.0.1
-
-# Database (default: SQLite)
 DB_ENGINE=django.db.backends.sqlite3
 DB_NAME=db.sqlite3
-DB_USER=
-DB_PASSWORD=
-DB_HOST=
-DB_PORT=
-
-# CORS Settings
-CORS_ALLOWED_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
-
-# File Upload Settings
-MAX_UPLOAD_SIZE=524288000  # 500MB in bytes
-ALLOWED_VIDEO_TYPES=video/mp4,video/mpeg,video/quicktime
-ALLOWED_IMAGE_TYPES=image/jpeg,image/png,image/jpg
-
-# Security (Production)
-SECURE_SSL_REDIRECT=False
-SESSION_COOKIE_SECURE=False
-CSRF_COOKIE_SECURE=False
+ALLOWED_HOSTS=localhost,127.0.0.1
+CORS_ALLOW_ALL_ORIGINS=True
 ```
 
 ### 5. Apply Migrations
