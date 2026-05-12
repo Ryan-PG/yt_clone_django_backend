@@ -13,6 +13,9 @@ A powerful Django REST Framework backend for a YouTube-like video platform. This
 - **CORS Ready**: Configured for React frontend integration
 - **File Handling**: Secure video and image upload with custom storage paths
 
+## Frontend Codes
+https://github.com/Ryan-PG/yt_clone_react_frontend
+
 ## 📋 Prerequisites
 
 - Python 3.8 or higher
